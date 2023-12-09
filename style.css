@@ -1,0 +1,73 @@
+.main-container {
+    width: 100%;
+    height: 100%;
+  }
+  ul {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    border: 1px solid #2980b9;
+    background: #000;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px #333;
+    border-radius: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    list-style: none;
+    width: 150px;
+  }
+  ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    transition: .5s;
+  }
+  ul li:hover a {
+    color: #222222;
+  }
+  .slide {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: calc(50% - 75px);
+    z-index: -1;
+    transition: .5s;
+  }
+  ul li:nth-child(1):hover ~ .slide {
+    left: 0;
+    background: #fff;
+  }
+  ul li:nth-child(2):hover ~ .slide {
+    left: 150px;
+    background: #fff;
+  }
+  ul li:nth-child(3):hover ~ .slide {
+    left: 300px;
+    background: #fff;
+  }
+  ul li:nth-child(4):hover ~ .slide {
+    left: 450px;
+    background: #fff;
+  }
+  ul li:nth-child(5):hover ~ .slide {
+    left: 600px;
+    background: #fff;
+  }
+  body{
+    background-image: url('https://avpcas.org/wp-content/uploads/2022/01/img-placements.jpg');
+    background-size: cover;
+    height: 97vh
+
+}
+h1{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+}

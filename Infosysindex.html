@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="InfyStyle.css">
+    <title>Document Upload Card</title>
+</head>
+<body>
+    <div class="card">
+    
+    <div id="upload-card" class="card">
+        <div class="card-body">
+            <h5 class="card-title">1.Upload 10th SSC Memo</h5>
+            <input type="file" id="fileInput" class="form-control">
+            <button onclick="uploadDocument()" class="btn btn-primary mt-3">Upload</button>
+        </div>
+    </div>
+    <div id="uploaded-card" class="card d-none">
+        <div class="card-body">
+            <h5 class="card-title">Uploaded Document</h5>
+            <p id="fileName"></p>
+            <button onclick="viewDocument()" class="btn btn-primary">View</button>
+            <button onclick="downloadDocument()" class="btn btn-success ml-2">Download</button>
+        </div>
+    </div>
+    <br>
+    <div id="upload-card" class="card">
+        <div class="card-body">
+            <h5 class="card-title">2.Upload Bonafide</h5>
+            <input type="file" id="fileInput" class="form-control">
+            <button onclick="uploadDocument()" class="btn btn-primary mt-3">Upload</button>
+        </div>
+    </div>
+    <div id="uploaded-card" class="card d-none">
+        <div class="card-body">
+            <h5 class="card-title">Uploaded Document</h5>
+            <p id="fileName"></p>
+            <button onclick="viewDocument()" class="btn btn-primary">View</button>
+            <button onclick="downloadDocument()" class="btn btn-success ml-2">Download</button>
+        </div>
+    </div>
+    <br>
+    
+
+    <script src="InfyScript.js"></script>
+</body>
+</html>
